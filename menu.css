@@ -1,0 +1,79 @@
+/* Estilos globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Contêiner principal do menu */
+  .menu-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro */
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  }
+  
+  /* Estilo da logo */
+  .logo-container {
+    margin-bottom: 20px;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border: 4px solid #e76f51; /* Borda laranja ao redor da logo */
+    border-radius: 12px; /* Borda arredondada */
+    padding: 10px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo do título */
+  .menu-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #f4a261; /* Cor laranja suave para destacar o título */
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+  /* Estilo do botão de jogar */
+  button {
+    background-color: #f4a261; /* Laranja suave */
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #e76f51; /* Laranja mais escuro no hover */
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #d64e29; /* Laranja mais forte ao clicar */
+  }
+  
+  /* Efeitos de animação para o botão */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 5px rgba(244, 162, 97, 0.8); /* Efeito ao focar */
+  }

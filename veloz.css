@@ -1,0 +1,93 @@
+/* Estilos globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Contêiner principal */
+  .menu-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Desfoque no fundo */
+  }
+  
+  /* Título */
+  .menu-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #f4a261; /* Laranja suave */
+  }
+  
+  /* Estilo do parágrafo */
+  .menu-content p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Caixa de entrada */
+  #answer-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #f4a261;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: #e76f51;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #d64e29;
+  }
+  
+  /* Destaque para o botão ativo */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 5px rgba(244, 162, 97, 0.8);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    button {
+      font-size: 18px;
+      padding: 12px 25px;
+    }
+  
+    #answer-input {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }

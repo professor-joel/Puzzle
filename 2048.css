@@ -1,0 +1,151 @@
+/* Estilos globais */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Contêiner principal do jogo */
+  .game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo mais escuro */
+    padding: 30px;
+    border-radius: 20px;
+    color: white;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo do título */
+  .menu-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #f4a261; /* Cor laranja suave para destacar o título */
+  }
+  
+  /* Estilo da grade de jogo */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo das células */
+  .grid-item {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc0b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para células com diferentes valores */
+  .grid-item[data-value="2"] {
+    background-color: #eee4da;
+  }
+  .grid-item[data-value="4"] {
+    background-color: #ede0c8;
+  }
+  .grid-item[data-value="8"] {
+    background-color: #f2b179;
+  }
+  .grid-item[data-value="16"] {
+    background-color: #f59563;
+  }
+  .grid-item[data-value="32"] {
+    background-color: #f67c5f;
+  }
+  .grid-item[data-value="64"] {
+    background-color: #f65e3b;
+  }
+  .grid-item[data-value="128"] {
+    background-color: #edcf72;
+  }
+  .grid-item[data-value="256"] {
+    background-color: #edcc61;
+  }
+  .grid-item[data-value="512"] {
+    background-color: #edc850;
+  }
+  .grid-item[data-value="1024"] {
+    background-color: #edc53f;
+  }
+  .grid-item[data-value="2048"] {
+    background-color: #edc22e;
+  }
+  
+  /* Efeito ao pressionar as teclas */
+  button {
+    background-color: #f4a261; /* Laranja suave */
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background-color: #e76f51; /* Laranja mais escuro no hover */
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #d64e29; /* Laranja mais forte ao clicar */
+  }
+  
+  /* Efeitos de animação para o botão */
+  button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 5px rgba(244, 162, 97, 0.8); /* Efeito ao focar */
+  }
+  #back-to-menu {
+    background-color: #e76f51; /* Cor laranja */
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+  }
+  
+  #back-to-menu:hover {
+    background-color: #d64e29;
+    transform: scale(1.05);
+  }
+  
+  #back-to-menu:active {
+    background-color: #b54c1c;
+  }
+  
+  #back-to-menu:focus {
+    outline: none;
+    box-shadow: 0 0 10px 5px rgba(244, 162, 97, 0.8);
+  }
